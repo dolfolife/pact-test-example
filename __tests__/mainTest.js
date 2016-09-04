@@ -19,7 +19,6 @@ function catchAndContinue(err, done) {
   if (err instanceof Error) {
     fail(err);
   }
-
   done();
 }
 
@@ -71,6 +70,7 @@ describe("Dog's API", () => {
 
       it('successfully verifies', (done) => {
         return getMeDogs({url, port}).then((response) => {
+          expect(response.headers).toEqual({'content-type': 'application/json' });
           expect(response.data).toEqual(EXPECTED_BODY);
           expect(response.status).toEqual(200);
         },fail).then(done)
