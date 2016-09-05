@@ -8,17 +8,14 @@ const port = 8989;
 const server = wrapper.createServer({
                port: port,
                log: path.resolve(process.cwd(), 'logs', 'mockserver-integration.log'),
-               dir: path.resolve(process.cwd(), 'pacts'),
+               dir: path.resolve(process.cwd(), 'server/pacts'),
                spec: 2,
-                cors: true,
-                consumer: 'MyConsumer',
+               consumer: 'MyConsumer',
                provider: 'MyProvider'
              });
 
 function catchAndContinue(err, done) {
-  if (err instanceof Error) {
-    fail(err);
-  }
+  fail(err);
   done();
 }
 
@@ -70,7 +67,7 @@ describe("Dog's API", () => {
 
       it('successfully verifies', (done) => {
         return getMeDogs({url, port}).then((response) => {
-          expect(response.headers).toEqual({'content-type': 'application/json' });
+          expect(response.headers['content-type']).toEqual('application/json');
           expect(response.data).toEqual(EXPECTED_BODY);
           expect(response.status).toEqual(200);
         },fail).then(done)

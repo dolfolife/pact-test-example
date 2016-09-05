@@ -2,7 +2,7 @@
   "name": "pact-test-consumer",
   "version": "1.0.0",
   "description": "description",
-  "main": "index.js",
+  "main": "client/index.js",
   "scripts": {
     "test": "jest --no-cache"
   },
@@ -28,6 +28,7 @@
     "plugins": ["transform-async-to-generator"]
   },
   "jest": {
+    "testEnvironment": "node",
     "preprocessorIgnorePatterns": [
       "/node_modules/"
     ]
