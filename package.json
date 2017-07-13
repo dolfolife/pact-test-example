@@ -9,14 +9,14 @@
   "author": "Rodolfo Sanchez <rodolfo2488@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@pact-foundation/pact-node": "4.5.2",
-    "axios": "0.14.0",
-    "babel-loader": "6.2.5",
-    "babel-preset-es2015": "6.14.0",
-    "babel-preset-react": "6.11.1",
-    "babel-preset-stage-0": "6.5.0",
-    "react": "15.3.1",
-    "webpack": "1.13.2"
+    "@pact-foundation/pact-node": "4.10.0",
+    "axios": "0.16.2",
+    "babel-loader": "7.1.1",
+    "babel-preset-es2015": "6.24.1",
+    "babel-preset-react": "6.24.1",
+    "babel-preset-stage-0": "6.24.1",
+    "react": "15.6.1",
+    "webpack": "3.2.0"
   },
   "babel": {
     "presets": [
@@ -34,16 +34,16 @@
     ]
   },
   "devDependencies": {
-    "babel-cli": "6.14.0",
-    "babel-jest": "15.0.0",
-    "babel-polyfill": "6.13.0",
-    "babel-preset-es2015": "6.14.0",
-    "babel-preset-react": "6.11.1",
-    "babel-preset-stage-0": "6.5.0",
-    "babel-preset-stage-3": "6.11.0",
-    "jest-cli": "15.1.1",
-    "pact": "1.0.0-rc.5",
-    "react-addons-test-utils": "15.3.1",
-    "react-test-renderer": "15.3.1"
+    "babel-cli": "6.24.1",
+    "babel-jest": "20.0.3",
+    "babel-polyfill": "6.23.0",
+    "babel-preset-es2015": "6.24.1",
+    "babel-preset-react": "6.24.1",
+    "babel-preset-stage-0": "6.24.1",
+    "babel-preset-stage-3": "6.24.1",
+    "jest-cli": "20.0.4",
+    "pact": "2.6.0",
+    "react-addons-test-utils": "15.6.0",
+    "react-test-renderer": "15.6.1"
   }
 }
